@@ -29,6 +29,11 @@ class Index extends React.Component {
             <div dangerouslySetInnerHTML={{ __html: node.description }} />
           </div>
         ))}
+        <h4>
+          <Link style={{ boxShadow: `none` }} to={`events`}>
+            ver todos los eventos
+          </Link>
+        </h4>
         <hr />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -48,6 +53,12 @@ class Index extends React.Component {
             </div>
           )
         })}
+        <h4>
+          <Link style={{ boxShadow: `none` }} to={`blogs`}>
+            ver todas las entradas de blog
+          </Link>
+        </h4>
+        <hr />
       </Layout>
     )
   }
@@ -63,7 +74,11 @@ export const pageQuery = graphql`
       }
     }
     # Blog posts
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 5) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {fields: {slug: {regex: "/blog/"}}}
+      limit: 5
+    ) {
       edges {
         node {
           excerpt
