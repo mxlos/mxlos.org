@@ -1,7 +1,7 @@
 ---
 title: "Como conocí a la comunidad de Mexicali Open Source"
 date: "2019-03-20"
-author: atempa09
+author: jorgeatempa
 path: 'blog/como-conoci-mxlos'
 description: 'Mi experiencia en la comunidad de Mexicali Open Source'
 ---
