@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import SiteInfo from "../components/siteInfo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -29,13 +29,27 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
+        <div>
+          <blockquote
+          style={{
+            ...scale(-1 / 10),
+            borderLeft: `0.31415926rem solid #cccccc`,
+            display: `block`,
+            marginBottom: rhythm(.5),
+            marginTop: rhythm(-.5),
+          }}
+          >
+            Escrito por: <strong>{post.frontmatter.author.name}</strong>. {post.frontmatter.author.bio}, <a href={`https://twitter.com/${post.frontmatter.author.twitter}`}>Puedes seguirlo en Twitter.</a> 
+          </blockquote>
+        </div>
+        <hr/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        <SiteInfo />
 
         <ul
           style={{
@@ -73,7 +87,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -84,6 +97,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        author {
+          id
+          name
+          bio
+          twitter
+          website
+        }
       }
     }
   }
