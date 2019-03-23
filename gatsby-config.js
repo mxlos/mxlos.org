@@ -7,19 +7,21 @@ dotenv.config({
 module.exports = {
   siteMetadata: {
     title: `Mexicali Open Source.    `,
-    author: `Mexicali Open Source`,
     description: `Mexicali Open Source es una comunidad que promueve el uso de tecnologías de código libre en la ciudad de Mexicali, BC México.`,
     siteUrl: `https://mxlos.org/`,
     social: {
       twitter: `mxlos`,
     },
   },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        name: `data`,
+        path: `${__dirname}/content/data`,
       },
     },
     {
@@ -27,6 +29,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
       },
     },
     {
@@ -68,6 +77,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-transformer-yaml`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -9,12 +9,12 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 
-function Bio() {
+function SiteInfo() {
   return (
     <StaticQuery
-      query={bioQuery}
+      query={siteInfoQuery}
       render={data => {
-        const { social } = data.site.siteMetadata
+        const { social, description } = data.site.siteMetadata
         return (
           <div
             style={{
@@ -23,8 +23,7 @@ function Bio() {
             }}
           >
             <p>
-              Mexicali Open Source es una comunidad que promueve el uso de tecnologías de código libre en la ciudad de Mexicali, BC México.
-              {` `}
+              {description}
               <a href={`https://twitter.com/${social.twitter}`}>
                 Puedes seguirnos en Twitter
               </a>
@@ -36,17 +35,19 @@ function Bio() {
   )
 }
 
-const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
+const siteInfoQuery = graphql`
+  query SiteInfoQuery {
+    # avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    #   childImageSharp {
+    #     fixed(width: 50, height: 50) {
+    #       ...GatsbyImageSharpFixed
+    #     }
+    #   }
+    # }
     site {
       siteMetadata {
+        title
+        description
         social {
           twitter
         }
@@ -55,4 +56,4 @@ const bioQuery = graphql`
   }
 `
 
-export default Bio
+export default SiteInfo

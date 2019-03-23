@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import SiteInfo from "../components/siteInfo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -17,7 +17,7 @@ class Index extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`, `opensource`, `mexicali`, `mexico`]}
         />
-        <Bio />
+        <SiteInfo />
         <h2>Entradas de blog:</h2>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -28,7 +28,7 @@ class Index extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{node.frontmatter.date}. Escrito por: <strong>{node.frontmatter.author.name}</strong>.</small>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
@@ -63,6 +63,9 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            author {
+              name
+            }
           }
         }
       }

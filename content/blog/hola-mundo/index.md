@@ -3,6 +3,7 @@ title: "Hola Mundo"
 date: "2019-03-09"
 path: 'blog/hola-mundo'
 description: 'Entrada inicial de ejemplo'
+author: jmolivas
 ---
 
 Esta es una página de ejemplo
