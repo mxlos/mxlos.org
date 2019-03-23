@@ -1,8 +1,9 @@
 ---
 title: "Como conocí a la comunidad de Mexicali Open Source"
 date: "2019-03-20"
+author: atempa09
 path: 'blog/como-conoci-mxlos'
-description: 'Una breve reseña acerca de la comunidad de Mexicali Open Source'
+description: 'Mi experiencia en la comunidad de Mexicali Open Source'
 ---
 
 ## ¿Qué es Mexicali Open Source?
