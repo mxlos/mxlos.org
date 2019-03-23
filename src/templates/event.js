@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import SiteInfo from "../components/siteInfo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -34,7 +34,7 @@ class EventTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        <SiteInfo />
       </Layout>
     )
   }
@@ -47,7 +47,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     meetupEvent(id: {eq: $id}) {
