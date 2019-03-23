@@ -44,7 +44,7 @@ class Index extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{node.frontmatter.date}. Escrito por: <strong>{node.frontmatter.author.name}</strong>.</small> 
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
@@ -89,6 +89,9 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            author {
+              name
+            }
           }
         }
       }
