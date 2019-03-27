@@ -20,9 +20,9 @@ cd mxlos.org
 npm install
 ```
 
-Agregando contenido en `src/blog/`
+Agregando contenido en `content/blog/`
 
-Creando un nuedo directorio ejemplo `titulo-de-la-entrada` y agregando un archivo `index.md`
+Creando un nuevo directorio ejemplo `titulo-de-la-entrada` y agregando un archivo `index.md`
 
 ```bash
 blog/
