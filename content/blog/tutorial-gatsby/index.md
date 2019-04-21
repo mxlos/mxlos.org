@@ -12,9 +12,7 @@ Durante los últimos fines de semana algunos miembros de la comunidad de Mexical
 
 Gatsby utiliza [ReactJS](https://reactjs.org/) (librería desarrollada e implementada por Facebook para construir interfaces gráficas) como plataforma para su flujo de trabajo. Inclusive puedes comenzar con Gatsby para aprender ReactJS. 
 
-Además Gatsby cuenta con una gama de diversos tipos de _plugins_ (librerías que proveen funcionalidad particular) para extender su funcionalidad. 
-
-Por último y no menos importante, se debe destacar que una de las principales fortalezas de Gatsby esta en su flexibilidad para el manejo de diferentes fuentes de datos, es decir, las fuentes de datos pueden proveenir a partir de diferentes tipos de archivos, tales como: CSV, JSON, YAML, información obtenida de un CMS, o un Documento de Google, entre otros.
+Además Gatsby cuenta con una gama de diversos tipos de _plugins_ (librerías que proveen funcionalidad particular) para extender su funcionalidad. Cabe destacar que una de las principales fortalezas de Gatsby esta en su flexibilidad para el manejo de diferentes fuentes de datos, es decir, las fuentes de datos pueden proveenir de diferentes tipos de archivos, tales como: CSV, JSON, YAML, información obtenida de un CMS, o un Documento de Google, entre otros.
 
 En esta serie de publicaciones describiremos el proceso de desarrollo de sitios estáticos con Gatsby. Para fines del tutorial, cabe mencionar que el entorno de desarrollo utilizado fue el siguiente:
 
