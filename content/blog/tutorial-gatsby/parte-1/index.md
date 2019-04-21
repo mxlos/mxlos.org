@@ -2,13 +2,15 @@
 title: "Introducción al desarrollo de sitios estáticos con Gatsby - Parte 1"
 date: "2019-04-20"
 author: jorgeatempa
-path: 'blog/tutorial-gatsby'
+path: 'blog/tutorial-gatsby/parte-1'
 description: 'En esta publicación se presenta una introducción al desarrollo de sitios estáticos con Gatsby'
 ---
 
 ### Introducción
 
-Durante los últimos fines de semana algunos miembros de la comunidad de Mexicali Open Source nos reunimos en las instalaciones de [La Playa Deluxe](https://www.facebook.com/LaPlayaDeLux/) (espacio de _Coworking_) con el objetivo de conocer e implementar los conceptos básicos de la herramienta de desarrollo ágil para sitios estáticos [Gatsby](https://www.gatsby.org/). 
+Durante los últimos fines de semana algunos miembros de la comunidad de Mexicali Open Source nos reunimos en las instalaciones de [La Playa Deluxe](https://www.facebook.com/LaPlayaDeLux/) (espacio de _Coworking_) con el objetivo de conocer e implementar los conceptos básicos de la herramienta de desarrollo ágil para sitios estáticos [Gatsby](https://www.gatsby.org/).
+
+![Taller de Gatsby](img/reunion.jpg)
 
 Gatsby utiliza [ReactJS](https://reactjs.org/) (librería desarrollada e implementada por Facebook para construir interfaces gráficas) como plataforma para su flujo de trabajo. Inclusive puedes comenzar con Gatsby para aprender ReactJS. 
 
