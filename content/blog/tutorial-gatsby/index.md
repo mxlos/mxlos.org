@@ -126,7 +126,7 @@ Gracias a que Gatsby cuenta con **Hot-Reload** (mecanismo que construye el sitio
 
 ### Conclusiones
 
-En esta primer entrega, hemos destacado algunos aspectos básicos de la herramienta de desarrollo ágil para sitios estáticos Gatsby. Además describimos el proceso de instalación y mostramos la facilidad con la que se pueden construir nuevas páginamos a través de un breve ejemplo.
+En esta primer entrega, hemos destacado algunos aspectos básicos de la herramienta de desarrollo ágil para sitios estáticos Gatsby. Además describimos el proceso de instalación y mostramos la facilidad con la que se pueden construir nuevas páginas a través de un breve ejemplo.
 
 ### Referencias
    1. [How to install Node.js with npm on Ubuntu 18.04](https://linux4one.com/how-to-install-node-js-with-npm-on-ubuntu-18-04/)
