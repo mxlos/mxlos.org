@@ -1,34 +1,78 @@
 ---
-title: "Desarrollo de sitios estáticos con Gatsby JS"
-date: "2019-03-27"
+title: "Introducción al desarrollo de sitios estáticos con Gatsby"
+date: "2019-04-20"
 author: jorgeatempa
 path: 'blog/tutorial-gatsby'
-description: 'En esta publicación se presenta una introducción al desarrollo de sitios estáticos con GatsbyJS'
+description: 'En esta publicación se presenta una introducción al desarrollo de sitios estáticos con Gatsby'
 ---
 
-A manera de taller, durante los últimos fines de semana (para ser exacto los últimos tres) algunos miembros de la comunidad nos hemos reunido en las instalaciones del espacio de _Coworking_ [La Playa Deluxe](https://www.facebook.com/LaPlayaDeLux/) con el objetivo de conocer e implementar conceptos básicos de la herramienta de desarrollo ágil para sitios estáticos [GatsbyJS](https://www.gatsbyjs.org/).
+Durante los últimos fines de semana algunos miembros de la comunidad de Mexicali Open Source, nos reunimos en las instalaciones de [La Playa Deluxe](https://www.facebook.com/LaPlayaDeLux/) (espacio de _Coworking_) con el objetivo de conocer e implementar los conceptos básicos de la herramienta de desarrollo ágil para sitios estáticos [Gatsby](https://www.gatsby.org/). 
 
-Está herramienta se sustenta sobre los conceptos de [ReactJS](https://reactjs.org/), por lo que, si has trabajado anteriormente con ReactJS no tendrás problemas en adaptarte a GatsbyJS. Aunque para ser honesto, puedes comenzar con GatsbyJS para inclusive aprender ReactJS. GatsbyJS proporciona diferentes tipos de **_plugins_** para extender su funcionalidad (librerías que proveen funcionalidad particular). En la siguiente imágen se puede observar la arquitectura que ofrece GatsbyJS.
+Gatsby utiliza [ReactJS](https://reactjs.org/) como plataforma para su flujo de trabajo. Además contamos con una gama de diversos tipos de _plugins_ (librerías que proveen funcionalidad particular) para extender su funcionalidad. 
 
-![Architecture](img/gatsbyjs-architecture.jpeg "GatsbyJS Architecture")
+En esta publicación describiremos el proceso de desarrollo de sitios estáticos con Gatsby. Para fines del tutorial, cabe mencionar que el entorno de desarrollo utilizado fue el siguiente:
 
-Describiendo la anterior imágen de izquierda a derecha, contamos con tres secciones:
+1. Sistema Operativo de Linux Ubuntu versión _18.04_.
+2. NodeJS versión _10.15.3_.
 
-### 1. **Data Sources**
-GatsbyJS te permite utilizar diferentes tipos de archivos como fuentes de datos, tales como: CSV, JSON, YAML, información que provenga de un CMS. Es decir, 
-### 2. **Build**
-### 3. **Deploy**
+### Instalación de NodeJS
 
-1. Introducción a Gatsby.
-2. Instalación.
-3. Desarrollo de las primeras páginas.
-4. Configuración de Plugins.
-5. Administración de rutas en el sitio.
-6. Como consumir al API de Meetup.
+Para comenzar con Gatsby es importante contar con una versión reciente o posterior a la _8.x_ de [NodeJS](https://nodejs.org) en nuestro Sistema Operativo. 
 
-y adquieras un poco de la experiencia que vivimos al comenzar a trabajar con Gatsby.
+Para la instalación de NodeJS [[1]](https://linux4one.com/how-to-install-node-js-with-npm-on-ubuntu-18-04/) necesitamos agregar a la lista lista de repositorios, un enlace a la fuente que contiene la versión LTS (soporte de larga duración, por sus siglas en Inglés) más reciente de NodeJS.
 
+    $ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 
-```sh
-$ node -v
-```
+Actualizamos los repositorios locales con el siguiente comando.
+
+    $ sudo apt update ; sudo apt upgrade
+
+Procedemos con la instalación de NodeJS y el gestor de paquetes NPM.
+
+    $ sudo apt install nodejs npm
+
+Validamos la instalación de NodeJS y NPM con los siguientes comandos respectivamente.
+
+    $ node -v
+    $ npm -v
+
+### Instalación de Gatsby
+
+Antes de comenzar con la instalación, cabe destacar que es altamente recomendado utilizar el gestor de paquetes NPM como usuario regular, es decir, sin especificar el famoso comando _**sudo**_ el cuál nos otorgá privilegios de _super usuario_. Para este último propósito, podemos seguir los pasos recomendados en [[2]](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) y a continuación descritos.
+
+El primer paso, consiste en crear un directorio oculto en el directorio HOME de nuestro sistema.
+
+    $  mkdir ~/.npm-global
+
+Después debemos exportar la variable de entorno que apunte al directorio creado anteriormente.
+
+    $ export PATH=~/.npm-global/bin:$PATH
+
+Actualizar las variables del sistema.
+
+    $ source ~/.profile
+
+Una vez realizado estos comandos, podemos comenzar la instalación de Gatsby utilizando el siguiente comando.
+
+    $ npm install -g gatsby-cli
+
+El prefijo `-g` permite contar con el interpréte de comandos de Gatsby en formato global, es decir, lo podemos ejecutar desde cualquier ubicación dentro de la Terminal.
+
+### Como construir un blog con Gatsby
+
+1. Instalar NodeJS.
+2. Instala el CLI (interfaz de línea de comandos) de Gatsby. 
+    ```
+    npm install -g gatsby-cli
+    ```
+3. Crea un nuevo sitio
+    ```
+    gatsby new blog
+    ```
+4. Cambiate al directorio de tu sitio
+    ```
+    cd blog
+    ```
+### Referencias
+   1. [How to install Node.js with npm on Ubuntu 18.04](https://linux4one.com/how-to-install-node-js-with-npm-on-ubuntu-18-04/)
+   2. [Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
