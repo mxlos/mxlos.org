@@ -12,9 +12,9 @@ Durante los últimos fines de semana algunos miembros de la comunidad de Mexical
 
 ![Taller de Gatsby](img/reunion.jpg)
 
-Gatsby utiliza [ReactJS](https://reactjs.org/) (librería desarrollada e implementada por Facebook para construir interfaces gráficas) como plataforma para su flujo de trabajo. Inclusive puedes comenzar con Gatsby para aprender ReactJS. 
+Gatsby es una herramienta muy potente basada en [ReactJS](https://reactjs.org/) (librería desarrollada e implementada por Facebook para construir interfaces gráficas). Si estas comenzando o quieres aprender ReactJS, inclusive puedes utilizar Gatsby como medio para este propósito. 
 
-Además Gatsby cuenta con una gama de diversos tipos de _plugins_ (librerías que proveen funcionalidad particular) para extender su funcionalidad. Una de las principales fortalezas de Gatsby esta en su flexibilidad para el manejo de diferentes fuentes de datos, es decir, las fuentes de datos pueden proveenir de diferentes tipos de archivos tales como: CSV, JSON, YAML, Documento de Google entre otros.
+Por otra parte, Gatsby cuenta con una gama de diversos tipos de _plugins_ (librerías que proveen funcionalidad particular) para extender su funcionalidad. Una de las principales fortalezas de Gatsby esta en su flexibilidad para el manejo de diferentes fuentes de datos, es decir, las fuentes de datos pueden proveenir de diferentes tipos de archivos tales como: CSV, JSON, YAML, Documento de Google entre otros.
 
 En esta serie de publicaciones describiremos el proceso de desarrollo de sitios estáticos con Gatsby. Para fines del tutorial, cabe mencionar que el entorno de desarrollo utilizado fue el siguiente:
 
@@ -64,7 +64,7 @@ $ export PATH=~/.npm-global/bin:$PATH
 $ source ~/.profile
 ```
 
-4. Una vez realizado estos comandos, podemos comenzar con la instalación del intérprete de comandos de Gatsby utilizando el siguiente comando.
+4. Por último, para la instalación del intérprete de comandos de Gatsby ejecutamos la siguiente instrucción.
 
 ```sh
 $ npm install -g gatsby-cli
@@ -80,13 +80,13 @@ Para crear un nuevo sitio [[3]](https://www.gatsbyjs.org/docs/quick-start), ejec
 $ gatsby new blog
 ```
 
-Cámbiate al directorio de tú sitio.
+Cámbiate al directorio de tú sitio, es decir, `blog`.
 
 ```sh
 $ cd blog
 ```
 
-Ejecuta el servicio de Gatsby en modo de desarrollo utilizando el siguiente comando.
+Ejecuta el servicio de Gatsby en modo de desarrollo ejecutando la siguiente instrucción.
 
 ```sh
 $ gatsby develop
@@ -98,9 +98,9 @@ Posteriormente, accede a la siguiente dirección `http://localhost:8000/` desde 
 
 Si todo ha ido bien, a partir de este momento ya podemos desarrollar páginas para nuestro sitio.
 
-### Crear una nueva página
+### ¿Como crear una nueva página?
 
-Para crear una nueva página, agreguemos un archivo llamado `new-page.js` dentro de la carpeta `blog/src/pages` con el siguiente contenido:
+Para crear una nueva página, agregaremos un archivo llamado `new-page.js` dentro de la carpeta `blog/src/pages` con el siguiente contenido:
 
 ```js
 import React from 'react'
@@ -118,9 +118,11 @@ Al acceder a la siguiente ruta `http://localhost:8000/new-page` el resultado deb
 
 Como puedes observar, no fue necesario establecer mecanismos para el enrutamiento o direccionamiento hacia nuestra nueva página. Esto es  parte del potencial que ofrece Gatsby para el desarrollo ágil.
 
-Por otro lado, sin notarlo ya hemos interactuado con componentes de ReactJS, ya que precisamente esto es lo que hemos desarrollado _**¡un componente!**_ que posteriormente fue procesado y traducido a una página HTML por parte de Gatsby.
+Por otro lado, sin notarlo ya hemos interactuado con componentes de ReactJS, ya que precisamente esto es lo que hemos desarrollado _**¡un componente!**_, que posteriormente fue procesado y traducido a una página HTML por parte de Gatsby.
 
-Sin embargo, no se parece mucho a la página ubicada en la raíz del sitio ¿cierto?, esto es debido a que su contenido no incluye la plantilla de diseño predeterminada. Para realizar este ajuste, solo debemos importar la plantilla predeterminada a nuestro archivo `new-page.js`, como se muestra a continuación.
+Sin embargo, no se parece mucho a la página ubicada en la raíz del sitio, ¿cierto?, esto es debido a que su contenido no incluye la plantilla de diseño predeterminada. 
+
+Para realizar este ajuste, solo debemos importar la plantilla predeterminada a nuestro archivo `new-page.js`, como se muestra a continuación.
 
 ```js
 import React from 'react'
@@ -142,7 +144,7 @@ Gracias a que Gatsby cuenta con _**hot-reloading**_ (mecanismo que construye el 
 
 ### Conclusiones
 
-En esta primer entrega, hemos destacado algunos aspectos básicos de la herramienta de desarrollo ágil para sitios estáticos Gatsby. Además describimos el proceso de instalación y mostramos la facilidad con la que se pueden construir nuevas páginas a través de un breve ejemplo.
+En esta primer entrega, hemos destacado algunos aspectos básicos de la herramienta de desarrollo ágil para sitios estáticos Gatsby. Además fue descrito el proceso de instalación del intérprete de comandos y para finalizar se mostro la facilidad con la que se pueden construir nuevas páginas a través de un ejemplo.
 
 ### Referencias
    1. [How to install Node.js with npm on Ubuntu 18.04](https://linux4one.com/how-to-install-node-js-with-npm-on-ubuntu-18-04/)
