@@ -8,7 +8,7 @@ description: 'En esta publicación se presenta una introducción al desarrollo d
 
 ### Introducción
 
-Durante los últimos fines de semana algunos miembros de la comunidad de Mexicali Open Source nos reunimos en las instalaciones de [La Playa Deluxe](https://www.facebook.com/LaPlayaDeLux/) (espacio de _Coworking_) con el objetivo de conocer e implementar los conceptos básicos de la herramienta de desarrollo ágil para sitios estáticos [Gatsby](https://www.gatsbyjs.org/).
+Durante los últimos fines de semana algunos miembros de la comunidad de Mexicali Open Source nos reunimos en las instalaciones de [La Playa Delux Coworking](https://www.facebook.com/LaPlayaDeLux/) con el objetivo de conocer e implementar los conceptos básicos de la herramienta de desarrollo ágil para sitios estáticos [Gatsby](https://www.gatsbyjs.org/).
 
 ![Taller de Gatsby](img/reunion.jpg)
 
