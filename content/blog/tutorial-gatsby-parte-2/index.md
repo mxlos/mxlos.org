@@ -8,65 +8,65 @@ description: 'En esta segunda parte, continuaremos examinando las característic
 
 ### Introducción
 
-En el mundo del desarrollo web, contamos con dos estrategias fundamentales: _sitios estáticos_ y _sitios dinámicos_. Una de las preguntas más importantes respecto a herramientas como Gatsby es **_¿Por qué debo desarrollar un sitio estático?_**. Para tratar de responder esta pregunta, primero debemos definir las características de ambas estrategias:
+En el mundo del _Desarrollo Web_, existen dos alternativas fundamentales: _sitios estáticos_ y _sitios dinámicos_. Una de las preguntas más importantes respecto a herramientas como [Gatsby](https://www.gatsbyjs.org/) es **_¿por qué debo desarrollar un sitio estático?_**. Para tratar de responder esta pregunta, primero debemos definir las características de ambas alternativas:
 
 #### Sitios Estáticos y Dinámicos
 
-Los sitios estáticos, no son nada nuevo dentro del ámbito del desarrollo web. Desde el surgimiento de la [World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web) hemos estado rodeados de ellos y como su nombre lo indica son páginas que mantienen información fija o estática. 
+Los sitios estáticos, no son nada nuevo dentro del ámbito del desarrollo web. Desde el surgimiento de la [World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web) hemos estado rodeados de ellos y como su nombre lo indica son sitios que se conforman de páginas cuya característica principal es mantener información fija o estática.
 
 Por ejemplo, los datos de contacto, el logotipo o la misión y visión de una empresa son datos que rara vez  requieren ser modificados y aunque este sea el caso, las actualizaciones estan separadas por largos períodos de tiempo (meses o años), por lo tanto podemos considerla como información permanente.
 
-Por otra parte los sitios dinámicos como su nombre lo indica, son sitios que requieren mantener información actualizada en todo momento. Bajo este esquema, el sitio debe reaccionar dinámicamente ante cualquier solicitud por parte del usuario o actualización de la información.
+Por otra parte los sitios dinámicos, son sitios que requieren mantener información actualizada en todo momento. Bajo este esquema, el sitio debe reaccionar dinámicamente ante la actualización de la información o cualquier solicitud por parte del usuario.
 
 Por ejemplo, consultar el pronóstico del clima, el estado de cuenta bancaria o recibir las publicaciones más recientes de nuestra red social favorita son algunas de las actividades que requieren de la intervención y coordinación de procesos externos o del lado del _Servidor_ para mantener la vigencia de la información.
 
-Ambas estrategias juegan papeles muy diferentes y pueden complementarse en el desarrollo de un producto más robusto. La mejor opción siempre estará sujeta a las necesidades que requieras satisfacer.
+Ambas alternativas juegan papeles muy diferentes y pueden complementarse en el desarrollo de un producto más robusto. La mejor opción siempre estará sujeta a las necesidades que requieras satisfacer.
 
-#### Ventajas de los sitios web estáticos
+#### Ventajas de los sitios estáticos
 
-En [[1](https://www.quora.com/Why-do-people-use-a-static-site-generator),[2](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website),[3](https://scotch.io/bar-talk/5-reasons-static-sites-rock)] se discuten las ventajas que ofrece el desarrollo de sitios web estáticos. A continuación presentamos algunas de las más relevantes.
+En [[1](https://www.quora.com/Why-do-people-use-a-static-site-generator),[2](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website),[3](https://scotch.io/bar-talk/5-reasons-static-sites-rock)] se discuten las ventajas que ofrece el desarrollo de sitios estáticos. A continuación presentamos algunas de las más relevantes.
 
 1. **Seguridad.** Una de las mayores razones por las que los servidores son _hackeados_ es por estar atrasados respecto a las actualizaciones y parches de seguridad. Todos los problemas de seguridad con los sitios dinámicos tradicionales simplemente desaparecen en los sitios estáticos [[3](https://scotch.io/bar-talk/5-reasons-static-sites-rock)].
 2. **Velocidad.** Al no requerir acceder constantemente a una base de datos para mantener la información actualizada, los sitios estáticos mantienen siempre la versión más reciente. Por lo tanto, los tiempos de descarga en el navegador son menores con respecto a los sitios dinámicos.
 3. **Almacenamiento.** Los sitios estáticos se conforman por archivos HTML básicos que requieren menos espacio, lo que hace que el alojamiento sea más barato respecto a los sitios dinámicos [[2]](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website).
 
-En esta segunda parte, continuaremos examinando las características de Gatsby para el desarrollo de sitios estáticos y enfatizaremos las ventajas del mismo.
+En esta segunda parte, continuaremos explorando las características de Gatsby para el desarrollo de sitios estáticos. Así mismo, se presenta un ejemplo nuevo a partir de una plantilla esencial.
 
-### Construir un mini-blog
+### Crear un sitio en Gatsby
 
-En esta sección vamos a desarrollar un nuevo sitio a partir de una plantilla básica. Puedes consultar la [primer parte](https://mxlos.org/blog/tutorial-gatsby-parte-1) en la que se describe el proceso de instalación de Gatsby.
+En esta sección vamos a desarrollar un nuevo sitio a partir de una plantilla esencial. Puedes consultar la [primer parte](https://mxlos.org/blog/tutorial-gatsby-parte-1) en la que se describe el proceso de instalación de Gatsby.
 
-Para comenzar a construir nuestro sitio ejecutemos la siguiente instrucción desde la Terminal.
+Para comenzar a construir nuestro sitio basado en la plantilla esencial, debemos ejecutar la siguiente instrucción desde la [Terminal](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners).
 ```bash
 $ gatsby new my-blog https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
-A continuación, nos movemos al directorio recién creado.
+A continuación, debemos cambiarnos de ubicación al directorio recién creado.
 ```bash
 $ cd my-blog
 ```
-Ejecuta el sitio de Gatsby en modo de desarrollo.
+Con la siguiente instrucción, arrancamos el servidor en entorno de desarrollo. Puedes acceder a través de la dirección `http://localhost:8000` desde cualquier navegador web.
 ```bash
 $ gatsby develop
 ```
-A partir de este punto, podemos continuar editando y revisando el sitio gracias al mecanismo de _hot-reloading_.
+A partir de este punto, podemos continuar editando y revisando el sitio gracias al mecanismo de **_hot-reloading_**.
 
-Examinemos el contenido de la página inicial `index.js`, ubicada en el siguiente directorio `my-blog/src/pages/`
+Con el apoyo de un editor de texto como [Visual Studio Code](https://code.visualstudio.com/), podemos navegar por la estructura de directorios y archivos que se alojan en `my-blog`. Examinemos el contenido del archivo que produce la página inicial, es decir, `index.js`, ubicado en el siguiente directorio `my-blog/src/pages/`.
 ```jsx{numberLines: true}
 import React from "react"
 
 export default () => <div>Hello world!</div>
 ```
-Actualicemos el encabezado.
+Actualicemos el encabezado de la siguiente manera.
 ```jsx{numberLines: true}
 import React from "react"
 
 export default () => (
   <div>
-    <h1>Mi blog personal<h1>
+    <h1>Mi blog personal<h1> 
   </div>
 )
 ```
-Si deseamos centrar el texto, podemos hacerlo de la siguiente manera.
+Si deseamos centrar el texto del encabezado, podemos hacerlo de la siguiente manera.
 ```jsx{numberLines: 3}
 ...
 <div>
@@ -84,7 +84,7 @@ Ahora, agreguemos una imagen.
 </div>
 ...
 ```
-Si deseamos centrar la imagen también, podemos utilizar propiedades embebidas de estilo como en nuestro primer caso.
+Si deseamos centrar la imagen, podemos utilizar propiedades embebidas de estilo como en nuestro primer caso de la siguiente manera.
 ```jsx{numberLines: 3}
 ...
 <div>
@@ -126,13 +126,13 @@ Continuemos nutriendo el contenido de nuestra página principal, agreguemos un p
 ...
 ```
 
-Aunque a primera vista hemos estado desarrollando HTML básico, lo cierto es que estamos trabajando con notación [JSX](https://reactjs.org/docs/introducing-jsx.html), notación muy potente utilizada en la librería ReactJS, tal como se mencionó anteriormente, estamos desarrollando con ReactJS a través de Gatsby.
+Aunque a primera vista hemos estado desarrollando HTML básico, lo cierto es que estamos trabajando con notación [JSX](https://reactjs.org/docs/introducing-jsx.html), notación muy potente utilizada en la librería ReactJS. Tal como se mencionó anteriormente, estamos desarrollando un sitio web con la librería de ReactJS a través de Gatsby.
 
 ### Mejorando la apariencia
 
-Podríamos ir mejorando el diseño utilizando hojas de estilo CSS o embebido en las etiquetas. Sin embargo para acelerar un poco esta etapa, vamos a utilizar un [Framework CSS](https://es.wikipedia.org/wiki/Framework_de_CSS) llamado [Bulma](https://bulma.io/). 
+Podríamos ir mejorando el diseño utilizando hojas de estilo CSS o propiedades embebidas en las etiquetas, sin embargo para acelerar un poco esta etapa vamos a utilizar un [Framework CSS](https://es.wikipedia.org/wiki/Framework_de_CSS) llamado [Bulma](https://bulma.io/). 
 
-Para su instalación, solo ejecuta el siguiente comando sobre la raíz del proyecto.
+Para su instalación, solo ejecuta el siguiente comando.
 ```bash
 $ npm install bulma
 ```
@@ -146,16 +146,15 @@ import "bulma/css/bulma.css" // highlight-line
 export default () => (
 ...
 ```
-Activemos nuevamente el servicio de Gatsby en modo de desarrollo, utilizando el siguiente comando.
+Activemos nuevamente el servidor en entorno de desarrollo de Gatsby, utilizando el siguiente comando.
 ```bash
 $ gatsby develop
 ```
-Revisemos el sitio desde nuestro navegador `http://localhost:8000/`.
+El resultado debe ser similar al siguiente.
+
 ![Sitio con bulma](img/mini-blog-center-header-and-image-bulma.png)
 
-Podemos percibir un ligero cambio en el estilo del tipo de letra. Para consultar más características de Bulma visita su [documentación oficial](https://bulma.io/documentation/). 
-
-Continuando con nuestro tutorial, corresponde ahora actualizar el contenido del archivo `index.js` de la siguiente manera.
+Podemos percibir un ligero cambio en el estilo del tipo de letra. Actualicemos nuevamente el contenido del archivo `index.js` de la siguiente manera.
 
 ```jsx{numberLines: 3}
 ...
@@ -215,9 +214,11 @@ El resultado obtenido debe ser similar al siguiente.
 
 ![Sitio con bulma y contenido personalizado](img/mini-blog-custom-content.png)
 
+Para consultar más características de Bulma visita su [documentación oficial](https://bulma.io/documentation/).
+
 ### Enlaces
 
-A continuación vamos a crear tres archivos dentro de la carpeta `pages`. La estructura de directorios debe ser similar a la siguiente.
+Para esta sección, lo primero que necesitamos hacer es crear tres archivos dentro de la carpeta `pages`. La estructura de directorios debe ser similar a la siguiente.
 
 ```bash
 my-blog/
@@ -229,9 +230,9 @@ my-blog/
         └── article-three.js
         
 ```
-El contenido de los archivos será el siguiente.
-
 > NOTA: Para evitar algún error, es muy importante dejar al final de cada archivo una línea en blanco.
+
+El contenido de los archivos será el siguiente.
 
 **article-one.js**
 
@@ -286,9 +287,8 @@ const ArticleThree = () => (
 
 export default ArticleThree
 ```
-Los hipervínculos o enlaces son una pieza fundamental en cualquier sitio web, estos nos permiten navegar entre las secciones del mismo. 
+Los hipervínculos o enlaces son una pieza fundamental en cualquier sitio web, estos nos permiten navegar entre las secciones del mismo. Para poder implementar esta característica en Gatsby, vamos a importar el componente _**Link**_. Esto lo puedes realizar de la siguiente manera.
 
-Para poder implementar esta característica en Gatsby, vamos a utilizar la etiqueta _**Link**_. Importa _Link_ desde el archivo `index.js` de la siguiente forma.
 
 ```jsx{numberLines: 1}
 import React from "react"
@@ -325,9 +325,10 @@ El resultado obtenido debe ser similar al siguiente.
 
 ![Enlaces](img/mini-blog-links.gif)
 
-Como puedes observer ha sido muy sencillo agregar enlaces a nuestro contenido local.
+Como puedes observer ha sido muy sencillo agregar enlaces a nuestro sitio.
 
-Para finalizar esta parte, concluyamos agregando un enlace de retorno desde cada uno de los _artículos_ para evitar tener que usar el botón del navegador. Esto lo podemos conseguir de la siguiente manera.
+
+Para finalizar esta sección, agreguemos un enlace de retorno para evitar el uso del botón en el navegador. Esto lo podemos realizar de la siguiente manera.
 
 **article-one.js**
 
@@ -352,15 +353,13 @@ const ArticleOne = () => (
 export default ArticleOne
 ```
 
-Agrega el mismo código para los archivos `article-two.js` y `article-three.js`.
-
-El resultado obtenido debe ser similar al siguiente.
+Agrega el mismo código para los archivos `article-two.js` y `article-three.js`. El resultado obtenido debe ser similar al siguiente.
 
 ![Enlace de retorno](img/mini-blog-back-link.gif)
 
 ### Conclusiones
 
-En esta segunda parte, se describieron las características de los sitios estáticos y dinámicos. Además se presento un ejemplo del desarrollo de un sitio en Gatsby a partir de una plantilla minimalista.
+En esta segunda parte, se describieron las características de los sitios estáticos y dinámicos. Se manifestaron algunas de las ventajas que conlleva el desarrollo de un sitio estático. Además se muestran los pasos para desarrollar un sitio estático con Gatsby a partir de una plantilla esencial. Para finalizar, se muestra la implementación de enlaces o hipervínculos en el sitio estático desarrollado.
 
 ### Referencias
    1. [Why do people use a static-site generator?](https://www.quora.com/Why-do-people-use-a-static-site-generator)
