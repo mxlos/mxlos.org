@@ -357,6 +357,8 @@ Agrega el mismo código para los archivos `article-two.js` y `article-three.js`.
 
 ![Enlace de retorno](img/mini-blog-back-link.gif)
 
+Si tienes alguna duda sobre el código desarrollado, puedes consultar el repositorio del proyecto [https://github.com/jatempa/my-blog](https://github.com/jatempa/my-blog)
+
 ### Conclusiones
 
 En esta segunda parte, se describieron las características de los sitios estáticos y dinámicos. Se manifestaron algunas de las ventajas que conlleva el desarrollo de un sitio estático. Además se muestran los pasos para desarrollar un sitio estático con Gatsby a partir de una plantilla esencial. Para finalizar, se muestra la implementación de enlaces o hipervínculos en el sitio estático desarrollado.
