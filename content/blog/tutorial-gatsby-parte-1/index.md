@@ -4,7 +4,7 @@ date: "2019-04-20"
 author: jorgeatempa
 path: 'blog/tutorial-gatsby-parte-1'
 description: 'En esta publicación se presenta una introducción al desarrollo de sitios estáticos con Gatsby'
-image: img/gatsbyjs-architecture.jpeg
+image: img/tutorial-gatsby-parte-1.png
 ---
 
 ### Introducción
