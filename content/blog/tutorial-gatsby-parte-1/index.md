@@ -27,20 +27,28 @@ Para comenzar con Gatsby, es importante contar con una versión reciente o poste
 
 Para la instalación de NodeJS [[1]](https://linux4one.com/how-to-install-node-js-with-npm-on-ubuntu-18-04/) necesitamos agregar a la lista lista de repositorios, un enlace a la fuente que contenga una versión reciente del mismo.
 
-    $ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+```bash
+$ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+```
 
 Después, actualizamos los repositorios locales con el siguiente comando.
 
-    $ sudo apt update ; sudo apt upgrade
+```bash
+$ sudo apt update ; sudo apt upgrade
+```
 
 Procedemos entonces con la instalación de NodeJS y el gestor de paquetes NPM.
 
-    $ sudo apt install nodejs npm
+```bash
+$ sudo apt install nodejs npm
+```
 
 Para validar dicha instalación, ejecutamos los siguientes comandos respectivamente.
 
-    $ node -v
-    $ npm -v
+```bash
+$ node -v
+$ npm -v
+```
 
 ### Instalación de Gatsby
 
@@ -48,25 +56,25 @@ Antes de comenzar con la instalación, cabe destacar que es altamente recomendad
 
 1. El primer paso, consiste en crear un directorio oculto en el directorio HOME de nuestro sistema.
 
-```sh
+```bash
 $  mkdir ~/.npm-global
 ```
 
 2. Después debemos exportar la variable de entorno que apunte al directorio creado anteriormente.
 
-```sh
+```bash
 $ export PATH=~/.npm-global/bin:$PATH
 ```
 
 3. Enseguida debemos actualizar las variables del sistema con el siguiente comando.
 
-```sh
+```bash
 $ source ~/.profile
 ```
 
 4. Por último, para la instalación del intérprete de comandos de Gatsby ejecutamos la siguiente instrucción.
 
-```sh
+```bash
 $ npm install -g gatsby-cli
 ```
 
@@ -76,19 +84,19 @@ El prefijo `-g` permite contar con el intérprete de comandos de Gatsby de forma
 
 Para crear un nuevo sitio [[3]](https://www.gatsbyjs.org/docs/quick-start), ejecuta el siguiente comando.
 
-```sh
+```bash
 $ gatsby new blog
 ```
 
 Cámbiate al directorio de tú sitio, es decir, `blog`.
 
-```sh
+```bash
 $ cd blog
 ```
 
 Ejecuta el servicio de Gatsby en modo de desarrollo ejecutando la siguiente instrucción.
 
-```sh
+```bash
 $ gatsby develop
 ```
 
@@ -102,7 +110,7 @@ Si todo ha ido bien, a partir de este momento ya podemos desarrollar páginas pa
 
 Para crear una nueva página, agregaremos un archivo llamado `new-page.js` dentro de la carpeta `blog/src/pages` con el siguiente contenido:
 
-```js
+```jsx{numberLines: true}
 import React from 'react'
 
 const NewPage = () => (
@@ -124,14 +132,16 @@ Sin embargo, no se parece mucho a la página ubicada en la raíz del sitio, ¿ci
 
 Para realizar este ajuste, solo debemos importar la plantilla predeterminada a nuestro archivo `new-page.js`, como se muestra a continuación.
 
-```js
+```jsx{numberLines: true}
 import React from 'react'
 
-import Layout from "../components/layout"
+import Layout from "../components/layout" // highlight-line
 
 const NewPage = () => (
+  // highlight-next-line
   <Layout>
     <h1>Hola desde una nueva página</h1>
+  // highlight-next-line
   </Layout>
 )
 
