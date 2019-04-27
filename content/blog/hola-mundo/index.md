@@ -4,6 +4,7 @@ date: "2019-03-09"
 path: 'blog/hola-mundo'
 description: 'Entrada inicial de ejemplo'
 author: jmolivas
+image: img/hello-world.jpg
 ---
 
 Esta es una página de ejemplo

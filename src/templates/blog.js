@@ -17,6 +17,8 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          author={post.frontmatter.author.name}
+          image={post.frontmatter.image.childImageSharp.fluid.src}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -103,6 +105,13 @@ export const pageQuery = graphql`
           bio
           twitter
           website
+        }
+        image {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
         }
       }
     }

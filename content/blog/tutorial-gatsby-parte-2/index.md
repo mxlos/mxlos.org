@@ -4,6 +4,7 @@ date: "2019-04-27"
 author: jorgeatempa
 path: 'blog/tutorial-gatsby-parte-2'
 description: 'En esta segunda parte, continuaremos examinando las características de Gatsby desarrollando la estructura base para nuestro mini blog'
+image: img/gatsbyjs-architecture.jpeg
 ---
 
 ### Introducción

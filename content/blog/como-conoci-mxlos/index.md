@@ -4,6 +4,7 @@ date: "2019-03-20"
 author: jorgeatempa
 path: 'blog/como-conoci-mxlos'
 description: 'Mi experiencia en la comunidad de Mexicali Open Source'
+image: 'img/primer-contacto-grupo-mxlos.png'
 ---
 
 ## ¿Qué es Mexicali Open Source?
