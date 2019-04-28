@@ -288,7 +288,7 @@ const ArticleThree = () => (
 
 export default ArticleThree
 ```
-Los hipervínculos o enlaces son una pieza fundamental en cualquier sitio web, estos nos permiten navegar entre las secciones del mismo. Para poder implementar esta característica en Gatsby, vamos a importar el componente _**Link**_. Esto lo puedes realizar de la siguiente manera.
+Los hipervínculos o enlaces son una pieza fundamental en cualquier sitio web, estos nos permiten navegar entre las secciones del mismo. Para poder implementar esta característica vamos a importar el componente _**Link**_ desde el archivo `index.js` de la siguiente manera.
 
 
 ```jsx{numberLines: 1}
