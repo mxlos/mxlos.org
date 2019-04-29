@@ -38,3 +38,12 @@ Para el ensamblaje tomamos como referencia el siguiente diagrama.
 Podemos construir o improvisar una cubierta al dispositivo para evitar su exposición.
 
 ![Case improvisado](img/simple-case.jpg)
+
+### Conectividad
+
+Para lograr la conectividad del dispositivo a través de Internet, lo primero que debemos hacer es buscar entre nuestras opciones de redes inalámbricas una conexión con el siguiente formato **_Feinstaubsensor-Device-ID_**, como se muestra en la imágen.
+![Redes inalámbricas locales](img/wireless-options.png)
+
+Posteriormente, debemos acceder desde el navegador a la siguiente dirección `http://192.168.4.1`. En esta ruta, se muestra un panel para la configuración de nuestro dispositivo con la red inalámbrica local, como se muestra a continuación.
+![Panel de configuración](img/configuration-dashboard.png)
+Nuestra red de área local es un puente de comunicación entre el dispositivo de adquisición de datos con Internet.
