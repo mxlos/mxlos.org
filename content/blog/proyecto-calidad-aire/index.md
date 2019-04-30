@@ -4,7 +4,7 @@ date: "2019-04-29"
 author: jorgeatempa
 path: 'blog/proyecto-calidad-del-aire-mexicali'
 description: 'Proyecto OpenSource para la adquisición de datos de la calidad del aire en Mexicali'
-image: img/proyecto-calidad-aire-mexicali.jpg
+image: 'img/proyecto-calidad-aire-mexicali.jpg'
 ---
 
 ### Introducción
@@ -70,6 +70,6 @@ Posteriormente, debemos acceder desde el navegador a la siguiente dirección `ht
 ![Panel de configuración](img/configuration-dashboard.png)
 Nuestra red de área local es un puente de comunicación entre el dispositivo de adquisición de datos con Internet.
 
-#### Referencias
+### Referencias
 
 1. [Particulas en suspensión](https://es.wikipedia.org/wiki/Part%C3%ADculas_en_suspensi%C3%B3n)
