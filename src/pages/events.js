@@ -20,12 +20,11 @@ class Index extends React.Component {
         <SiteInfo />
         <h2>Eventos:</h2>
         {events.map(({ node }) => {
-          const title = node.name
           return (
             <div key={node.fields.slug}>
               <h3>
                 <Link style={{ boxShadow: `none` }} to={`event/${node.local_date}`}>
-                  {title}
+                  {node.fields.name}
                 </Link>
               </h3>
               <small>{node.local_date}</small>
