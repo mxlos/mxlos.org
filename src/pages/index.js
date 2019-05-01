@@ -16,6 +16,7 @@ class Index extends React.Component {
         <SEO
           title={siteTitle}
           keywords={[`blog`, `gatsby`, `javascript`, `react`, `opensource`, `mexicali`, `mexico`]}
+          image={'img/mxlos-background.jpg'}
         />
         <SiteInfo />
         {data.allMeetupEvent.edges.map(({ node }) => (
