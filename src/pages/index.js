@@ -16,7 +16,7 @@ class Index extends React.Component {
         <SEO
           title={siteTitle}
           keywords={[`blog`, `gatsby`, `javascript`, `react`, `opensource`, `mexicali`, `mexico`]}
-          image={'img/mxlos-background.jpg'}
+          image={data.image.childImageSharp.fluid.src}
         />
         <SiteInfo />
         {data.allMeetupEvent.edges.map(({ node }) => (
@@ -74,6 +74,15 @@ export const pageQuery = graphql`
         title
       }
     }
+
+    image: file(absolutePath: { regex: "/mxlos-background.jpg/" }) {
+      childImageSharp {
+        fluid {
+          src
+        }
+      }
+    }
+
     # Blog posts
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
