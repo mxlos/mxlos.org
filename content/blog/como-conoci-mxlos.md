@@ -4,7 +4,7 @@ date: "2019-03-20"
 author: jorgeatempa
 path: 'blog/como-conoci-mxlos'
 description: 'Mi experiencia en la comunidad de Mexicali Open Source'
-image: '../../assets/primer-contacto-grupo-mxlos.png'
+image: '../assets/primer-contacto-grupo-mxlos.png'
 ---
 
 ## ¿Qué es Mexicali Open Source?
@@ -15,7 +15,7 @@ Desde hace aproximadamente nueve años en la ciudad de Mexicali Baja California,
 
 En mi caso, la invitación llego de parte de Ivan Gonzalez (en aquel entonces mi jefe). Él me comentó acerca del evento y me compartió el enlace al [_Grupo en Google_](https://groups.google.com/forum/#!forum/mxl-opensource) (canal oficial en ese momento) y aunque no tenía idea en que consistía, me sacudí los nervios y la incertidumbre de los hombros e hice contacto:
 
-![Mensaje a MxlOS](../../assets/primer-contacto-grupo-mxlos.png)
+![Mensaje a MxlOS](../assets/primer-contacto-grupo-mxlos.png)
 
 ## ¿Que tal la experiencia en la primer reunión?
 
