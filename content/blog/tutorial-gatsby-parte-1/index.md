@@ -4,14 +4,14 @@ date: "2019-04-20"
 author: jorgeatempa
 path: 'blog/tutorial-gatsby-parte-1'
 description: 'En esta publicación se presenta una introducción al desarrollo de sitios estáticos con Gatsby'
-image: img/tutorial-gatsby-parte-1.png
+image: '../../assets/tutorial-gatsby-parte-1.png'
 ---
 
 ### Introducción
 
 Durante los últimos fines de semana algunos miembros de la comunidad de Mexicali Open Source nos reunimos en las instalaciones de [La Playa Delux Coworking](https://www.facebook.com/LaPlayaDeLux/) con el objetivo de conocer e implementar los conceptos básicos de la herramienta de desarrollo ágil para sitios estáticos [Gatsby](https://www.gatsbyjs.org/).
 
-![Taller de Gatsby](img/reunion.jpg)
+![Taller de Gatsby](../../assets/reunion.jpg)
 
 Gatsby es una herramienta muy potente basada en [ReactJS](https://reactjs.org/) (librería desarrollada e implementada por Facebook para construir interfaces gráficas). Si estas comenzando o quieres aprender ReactJS, inclusive puedes utilizar Gatsby como medio para este propósito. 
 
@@ -103,7 +103,7 @@ $ gatsby develop
 
 Posteriormente, accede a la siguiente dirección `http://localhost:8000/` desde tú navegador web para observar el siguiente resultado.
 
-![Welcome to Gatsby](img/initial_gatsby.png)
+![Welcome to Gatsby](../../assets/initial_gatsby.png)
 
 Si todo ha ido bien, a partir de este momento ya podemos desarrollar páginas para nuestro sitio.
 
@@ -123,7 +123,7 @@ export default NewPage
 
 Al acceder a la siguiente ruta `http://localhost:8000/new-page` el resultado debe ser similar al siguiente.
 
-![New Page](img/new-page.png)
+![New Page](../../assets/new-page.png)
 
 Como puedes observar, no fue necesario establecer mecanismos para el enrutamiento o direccionamiento hacia nuestra nueva página. Esto es  parte del potencial que ofrece Gatsby para el desarrollo ágil.
 
@@ -151,7 +151,7 @@ export default NewPage
 
 Gracias a que Gatsby cuenta con _**hot-reloading**_ (mecanismo que construye el sitio en segundo plano evitando tener que refrescar el navegador) solo necesitamos regresar al navegador y observar la actualización realizada, como se muestra a continuación.
 
-![New page with default template](img/new-page-with-template-animation.gif)
+![New page with default template](../../assets/new-page-with-template-animation.gif)
 
 ### Conclusiones
 

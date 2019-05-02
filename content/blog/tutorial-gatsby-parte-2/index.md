@@ -4,7 +4,7 @@ date: "2019-04-27"
 author: jorgeatempa
 path: 'blog/tutorial-gatsby-parte-2'
 description: 'En esta segunda parte, continuaremos examinando las características de Gatsby desarrollando la estructura base para nuestro mini blog'
-image: img/tutorial-gatsby-parte-2.png
+image: '../../assets/tutorial-gatsby-parte-2.png'
 ---
 
 ### Introducción
@@ -102,7 +102,7 @@ Si deseamos centrar la imagen, podemos utilizar propiedades embebidas de estilo 
 ...
 ```
 El resultado obtenido debe ser similar al siguiente.
-![Imagen y encabezado centrado](./img/mini-blog-center-header-and-image.png)
+![Imagen y encabezado centrado](./../../assets/mini-blog-center-header-and-image.png)
 Continuemos nutriendo el contenido de nuestra página principal, agreguemos un párrafo.
 ```jsx{numberLines: 3}
 ...
@@ -153,7 +153,7 @@ $ gatsby develop
 ```
 El resultado debe ser similar al siguiente.
 
-![Sitio con bulma](img/mini-blog-center-header-and-image-bulma.png)
+![Sitio con bulma](../../assets/mini-blog-center-header-and-image-bulma.png)
 
 Podemos percibir un ligero cambio en el estilo del tipo de letra. Actualicemos nuevamente el contenido del archivo `index.js` de la siguiente manera.
 
@@ -213,7 +213,7 @@ export default () => (
 
 El resultado obtenido debe ser similar al siguiente.
 
-![Sitio con bulma y contenido personalizado](img/mini-blog-custom-content.png)
+![Sitio con bulma y contenido personalizado](../../assets/mini-blog-custom-content.png)
 
 Para consultar más características de Bulma visita su [documentación oficial](https://bulma.io/documentation/).
 
@@ -324,7 +324,7 @@ Este proceso se répite para el resto de artículos.
 
 El resultado obtenido debe ser similar al siguiente.
 
-![Enlaces](img/mini-blog-links.gif)
+![Enlaces](../../assets/mini-blog-links.gif)
 
 Como puedes observer ha sido muy sencillo agregar enlaces a nuestro sitio.
 
@@ -356,7 +356,7 @@ export default ArticleOne
 
 Agrega el mismo código para los archivos `article-two.js` y `article-three.js`. El resultado obtenido debe ser similar al siguiente.
 
-![Enlace de retorno](img/mini-blog-back-link.gif)
+![Enlace de retorno](../../assets/mini-blog-back-link.gif)
 
 Si tienes alguna duda sobre el código desarrollado, puedes consultar el repositorio del proyecto [https://github.com/jatempa/my-blog](https://github.com/jatempa/my-blog)
 
