@@ -4,7 +4,7 @@ date: "2019-04-29"
 author: jorgeatempa
 path: 'blog/proyecto-calidad-del-aire-mexicali'
 description: 'Proyecto OpenSource para la adquisición de datos de la calidad del aire en Mexicali'
-image: '../../assets/proyecto-calidad-aire-mexicali.jpg'
+image: '../assets/proyecto-calidad-aire-mexicali.jpg'
 ---
 
 ### Introducción
@@ -27,7 +27,7 @@ Algunos de los estudios de casos relacionados con Mexicali, pueden consultarse e
 
 Mexicali Open Source ha obtenido los materiales para producir algunos sensores. Estos sensores han sido ensamblados, programados, y conectados a la API de  [Luftdaten](https://luftdaten.info/). Los sensores activos de Luftdaten en Mexicali pueden ser monitoreados a través del siguiente [Mapa](https://deutschland.maps.luftdaten.info/#12/32.6305/-115.4144).
 
-![Materials](../../assets/materiales.jpg)
+![Materials](../assets/materiales.jpg)
 
 > ¡Los datos están abiertos! ¡Están disponibles para todos!
 
@@ -89,19 +89,19 @@ Para la construcción del dispositivo necesitamos los siguientes materiales:
 
 Para el ensamblaje tomamos como referencia el siguiente diagrama.
 
-![Diagrama de conexion](../../assets/diagrama-conexion.png)
+![Diagrama de conexion](../assets/diagrama-conexion.png)
 
 Podemos construir o improvisar una cubierta al dispositivo para evitar su exposición.
 
-![Case improvisado](../../assets/simple-case.jpg)
+![Case improvisado](../assets/simple-case.jpg)
 
 #### Conectividad
 
 Para lograr la conectividad del dispositivo a través de Internet, lo primero que debemos hacer es buscar entre nuestras opciones de redes inalámbricas una conexión con el siguiente formato **_Feinstaubsensor-Device-ID_**, como se muestra en la imágen.
-![Redes inalámbricas locales](../../assets/wireless-options.png)
+![Redes inalámbricas locales](../assets/wireless-options.png)
 
 Posteriormente, debemos acceder desde el navegador a la siguiente dirección `http://192.168.4.1`. En esta ruta, se muestra un panel para la configuración de nuestro dispositivo con la red inalámbrica local, como se muestra a continuación.
-![Panel de configuración](../../assets/configuration-dashboard.png)
+![Panel de configuración](../assets/configuration-dashboard.png)
 Nuestra red de área local es un puente de comunicación entre el dispositivo de adquisición de datos con Internet.
 
 ### Referencias
