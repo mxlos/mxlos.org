@@ -1,12 +1,13 @@
 ---
-title: "Hola Mundo"
-date: "2019-03-09"
-path: 'blog/hola-mundo'
-description: 'Entrada inicial de ejemplo'
+date: '2019-03-09'
+path: blog/hola-mundo
+title: Hola Mundo
+contentType: none
+description: Entrada inicial de ejemplo
 author: jmolivas
-image: '../assets/hello-world.jpg'
+image: ../assets/hello-world.jpg
+updated_at: '2019-06-13T02:28:26.957Z'
 ---
-
 Esta es una página de ejemplo
 
 Tu puedes crear entradas nuevas al blog
@@ -46,7 +47,8 @@ Cuerpo de la entrada ...
 ```
 
 #### NOTAS
-1. El valor de `author-id` debe ser idéntico al valor del campo _**author**_ registrado en el archivo `content/data/author.yaml`. 
+
+1. El valor de `author-id` debe ser idéntico al valor del campo `id` registrado en el archivo `content/data/author.yaml`. 
 2. El directorio `content/assets/` mantiene las imagenes utilizadas en la publicación, así como la imagen de referencia en el archivo `.md`, es decir, el valor de `image: '../assets/imagen-referencia'`.
 
 Cuando el contenido este listo solo queda hacer commit y enviar un PR con los cambios.
