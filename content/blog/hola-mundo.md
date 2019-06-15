@@ -3,52 +3,16 @@ date: '2019-03-09'
 path: blog/hola-mundo
 title: Hola Mundo
 contentType: none
+updated_at: '2019-06-15T07:13:31.212Z'
 description: Entrada inicial de ejemplo
 author: jmolivas
 image: ../assets/hello-world.jpg
-updated_at: '2019-06-13T02:28:26.957Z'
----
-Esta es una página de ejemplo
-
-Tu puedes crear entradas nuevas al blog
-
-Haciendo un fork del repositorio [desde aquí](https://github.com/mxlOS/mxlos.org/fork)
-
-Clonando el repositorio
-
-```bash
-git clone https://github.com/[user]/mxlos.org
-cd mxlos.org
-npm install
-```
-
-Agregando contenido en `content/blog/`
-
-Creando un nuevo archivo Markdown, ejemplo `titulo-de-la-entrada.md`
-
-```bash
-blog/
-└── titulo-de-la-entrada.md
-```
-
-Contenido del archivo `titulo-de-la-entrada.md` 
-
-```md
----
-title: "Hola Mundo"
-date: "2019-03-09"
-path: 'blog/hola-mundo'
-description: 'Entrada inicial de ejemplo'
-author: author-id
-image: '../assets/imagen-referencia'
 ---
 
-Cuerpo de la entrada ...
-```
+Redis is an open-source, networked, in-memory, key-value data store that can be used as a drop-in caching backend for your Drupal or WordPress website.
 
-#### NOTAS
-
-1. El valor de `author-id` debe ser idéntico al valor del campo `id` registrado en el archivo `content/data/author.yaml`. 
-2. El directorio `content/assets/` mantiene las imagenes utilizadas en la publicación, así como la imagen de referencia en el archivo `.md`, es decir, el valor de `image: '../assets/imagen-referencia'`.
-
-Cuando el contenido este listo solo queda hacer commit y enviar un PR con los cambios.
+<Callout title="Agency DevOps Training" link="https://pantheon.io/agencies/learn-pantheon?docs">
+  <p>
+    Learn industry best practices for caching, how to take advantage of them on the platform, and troubleshooting common issues with help from the experts at Pantheon.
+  </p>
+</Callout>
