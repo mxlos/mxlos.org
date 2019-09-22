@@ -48,7 +48,7 @@ module.exports = {
     {
       resolve: `gatsby-source-meetup`,
       options: {
-        key: process.env.MEETUP_API_KEY,
+        apiKey: process.env.MEETUP_API_KEY,
         groupUrlName: "Mexicali-Open-Source",
         status: "upcoming,past",
         desc: "true",
