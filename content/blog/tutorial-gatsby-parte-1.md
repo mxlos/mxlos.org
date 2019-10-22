@@ -73,13 +73,13 @@ $ npm config set prefix '~/.npm-global'
 $ export PATH=~/.npm-global/bin:$PATH
 ```
 
-3. Enseguida debemos actualizar las variables del sistema con el siguiente comando.
+4. Enseguida debemos actualizar las variables del sistema con el siguiente comando.
 
 ```bash
 $ source ~/.profile
 ```
 
-4. Por último, para la instalación del intérprete de comandos de Gatsby ejecutamos la siguiente instrucción.
+5. Por último, para la instalación del intérprete de comandos de Gatsby ejecutamos la siguiente instrucción.
 
 ```bash
 $ npm install -g gatsby-cli
