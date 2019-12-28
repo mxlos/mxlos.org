@@ -6,7 +6,7 @@ dotenv.config({
 
 module.exports = {
   siteMetadata: {
-    title: `Mexicali Open Source.    `,
+    title: `Mexicali Open Source`,
     description: `Mexicali Open Source es una comunidad que promueve el uso de tecnologías de código libre en la ciudad de Mexicali, BC México.`,
     siteUrl: process.env.SITE_URL,
     social: {
