@@ -3,7 +3,7 @@ title: "La primera del año! Reunion Enero 2020"
 date: "2020-02-05"
 path: 'blog/reuniones/enero-2020'
 description: 'Como se vivio la primera reunion del año'
-author: luisduenas
+author: aflores
 image: 'assets/enero2020.jpg'
 ---
 

@@ -10,6 +10,12 @@
   name: Jorge Atempa
   twitter: atempa09
   website: 'https://jatempa.github.io/atempa-blog/'
+- id: aflores
+  bio: >-
+    Ingeniera en Sistemas Computacionales, estudiando una Maestria en Sistemas Computacionales en el TECNM
+  name: Alejandra Flores
+  twitter: 
+  website: 'https://github.com/floresBe'
 - id: luisduenas
   bio: >-
     Desarrollador Javascript, trabajo desde casa
