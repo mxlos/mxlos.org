@@ -51,5 +51,8 @@ Quien presentó su plática “JAMstack: Behind the hype”, donde nos explico u
 
 Se les agradece a cada uno de ellos el tiempo dedicado para que la comunidad siga aprendiendo y mejorando. 
 
+![Todos los asistentes](/assets/enero2020_todos.jpg)
+
 Si te interesan estos temas, ya sea para saber algo nuevo o dar a conocer un tema, asiste a las reuniones que se realizan mensualmente. Para más información únete al [grupo en Facebook Mexicali OpenSource](https://www.facebook.com/groups/mxlos/).
+
 
