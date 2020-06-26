@@ -13,7 +13,7 @@ Durante los últimos fines de semana algunos miembros de la comunidad de Mexical
 
 ![Taller de Gatsby](../assets/reunion.jpg)
 
-Gatsby es una herramienta muy potente basada en [ReactJS](https://reactjs.org/) (librería desarrollada e implementada por Facebook para construir interfaces gráficas). Si estas comenzando o quieres aprender ReactJS, inclusive puedes utilizar Gatsby como medio para este propósito. 
+Gatsby es una herramienta muy potente basada en [ReactJS](https://reactjs.org/) (librería desarrollada e implementada por Facebook para construir interfaces gráficas). Si estas comenzando o quieres aprender ReactJS, inclusive puedes utilizar Gatsby como medio para este propósito.
 
 Por otra parte, Gatsby cuenta con una gama de diversos tipos de _plugins_ (librerías que proveen funcionalidad particular) para extender su funcionalidad. Una de las principales fortalezas de Gatsby esta en su flexibilidad para el manejo de diferentes fuentes de datos, es decir, las fuentes de datos pueden proveenir de diferentes tipos de archivos tales como: CSV, JSON, YAML, Documento de Google entre otros.
 
@@ -24,7 +24,7 @@ En esta serie de publicaciones describiremos el proceso de desarrollo de sitios 
 
 ### Instalación de NodeJS
 
-Para comenzar con Gatsby, es importante contar con una versión reciente o posterior a la _**8.x**_ de [NodeJS](https://nodejs.org) en nuestro Sistema Operativo. 
+Para comenzar con Gatsby, es importante contar con una versión reciente o posterior a la _**8.x**_ de [NodeJS](https://nodejs.org) en nuestro Sistema Operativo.
 
 Para la instalación de NodeJS [[1]](https://linux4one.com/how-to-install-node-js-with-npm-on-ubuntu-18-04/) necesitamos agregar a la lista lista de repositorios, un enlace a la fuente que contenga una versión reciente del mismo.
 
@@ -61,19 +61,25 @@ Antes de comenzar con la instalación, cabe destacar que es altamente recomendad
 $  mkdir ~/.npm-global
 ```
 
-2. Después debemos exportar la variable de entorno que apunte al directorio creado anteriormente.
+2. Configure npm para usar la nueva ruta del directorio.
+
+```bash
+$ npm config set prefix '~/.npm-global'
+```
+
+3. Después debemos exportar la variable de entorno que apunte al directorio creado anteriormente.
 
 ```bash
 $ export PATH=~/.npm-global/bin:$PATH
 ```
 
-3. Enseguida debemos actualizar las variables del sistema con el siguiente comando.
+4. Enseguida debemos actualizar las variables del sistema con el siguiente comando.
 
 ```bash
 $ source ~/.profile
 ```
 
-4. Por último, para la instalación del intérprete de comandos de Gatsby ejecutamos la siguiente instrucción.
+5. Por último, para la instalación del intérprete de comandos de Gatsby ejecutamos la siguiente instrucción.
 
 ```bash
 $ npm install -g gatsby-cli
@@ -129,7 +135,7 @@ Como puedes observar, no fue necesario establecer mecanismos para el enrutamient
 
 Por otro lado, sin notarlo ya hemos interactuado con componentes de ReactJS, ya que precisamente esto es lo que hemos desarrollado _**¡un componente!**_, que posteriormente fue procesado y traducido a una página HTML por parte de Gatsby.
 
-Sin embargo, no se parece mucho a la página ubicada en la raíz del sitio, ¿cierto?, esto es debido a que su contenido no incluye la plantilla de diseño predeterminada. 
+Sin embargo, no se parece mucho a la página ubicada en la raíz del sitio, ¿cierto?, esto es debido a que su contenido no incluye la plantilla de diseño predeterminada.
 
 Para realizar este ajuste, solo debemos importar la plantilla predeterminada a nuestro archivo `new-page.js`, como se muestra a continuación.
 
